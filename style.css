@@ -126,13 +126,31 @@ body {
         font-size: 7px;
     }
 
+   
+
+    #containerMain2 form {
+        height: 48vh;
+    }
+
+    #btnEnviar {
+        padding: 7px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 6px;
+    }
+
     #containerMain1 form {
-        width: 30vw;
+        width: 40vw;
         height: 48vh;
     }
 
     #containerMain2 form {
-        height: 48vh;
+        width: 35vw;
+        height: 45vh;
     }
 
     #btnEnviar {
@@ -146,16 +164,15 @@ body {
     #btnEnviar {
         padding: 10px;
     }
-
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
     html {
         font-size: 6px;
     }
 
     #containerMain1 form {
-        width: 40vw;
+        width: 40%;
         height: 48vh;
     }
 
