@@ -25,3 +25,8 @@ inputFile.addEventListener("change", function(e) {
         
     }
 })
+
+function Enviar(){
+    alert("Denuncia enviada com sucesso!")
+    window.location.href = 'index.html'
+}
