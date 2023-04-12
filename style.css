@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2? family=Kanit:wght@100&family=Roboto:wght@100&display=swap');
+
+
+html {
+    font-size: 10px;
+    font-family: 'Share Tech';
+}
+
+body {
+    background: black;
+}
+
+#containerMain1,#containerMain2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#containerMain1 form {
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 70vh;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 5px;
+}
+
+#containerMain2 form {
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 60vh;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 5px;
+}
+
+#txtCidade,
+#txtBairro,
+#txtDetalhes,
+#btnEnviar {
+    padding: 20px;
+    margin-top: 20px;
+    width: 70%;
+    background: #BDE3FF;
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    color: black;
+    border-radius: 5px;
+}
+
+
+#btnEnviar{
+    width: 35%;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+}
+
+#btnEnviar:hover{
+    background: #a9dbff;
+}
+#lblFicha{
+    margin-top: 5vh;
+    font-size: 1rem;
+}
+
+::placeholder{
+    color: black;
+}
+
+#lblFicha {
+    font-size: 3rem;
+}
+
+.picture__input{
+    display: none;
+
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 65%;
+    height: 35vh;
+    border: 1.5px dashed currentColor;
+    outline: 0;
+    font-size: 2rem;
+    color: #129bfd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.picture:hover{
+    color: #0462a6;
+}
+.picture_img{
+    max-width: 100%;
+    background-size: cover;
+}
+
+#picture__input{
+    background: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    html{
+        font-size: 7px;
+    }
+    #containerMain2 form {
+        height: 48vh;
+    }
+    #btnEnviar{
+        padding: 7px;
+        margin-bottom: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    html{
+        font-size: 6px;
+    }
+    #containerMain2 form {
+        width: 35vw;
+        height: 45vh;
+    }
+    #btnEnviar{
+        padding: 7px;
+        margin-bottom: 15px;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    html{
+        font-size: 6px;
+    }
+    #containerMain2 form {
+        width: 70vw;
+        height: 45vh;
+    }
+    #btnEnviar{
+        padding: 7px;
+        margin-bottom: 15px;
+    }
+  }
