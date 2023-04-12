@@ -16,7 +16,8 @@ body {
     background: black;
 }
 
-#containerMain1,#containerMain2 {
+#containerMain1,
+#containerMain2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +62,7 @@ body {
 }
 
 
-#btnEnviar{
+#btnEnviar {
     width: 35%;
     padding: 15px;
     font-size: 1.8rem;
@@ -69,15 +70,16 @@ body {
     font-weight: 900;
 }
 
-#btnEnviar:hover{
+#btnEnviar:hover {
     background: #a9dbff;
 }
-#lblFicha{
+
+#lblFicha {
     margin-top: 5vh;
     font-size: 1rem;
 }
 
-::placeholder{
+::placeholder {
     color: black;
 }
 
@@ -85,12 +87,12 @@ body {
     font-size: 3rem;
 }
 
-.picture__input{
+.picture__input {
     display: none;
 
 }
 
-.picture{
+.picture {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,54 +107,86 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-.picture:hover{
+
+.picture:hover {
     color: #0462a6;
 }
-.picture_img{
+
+.picture_img {
     max-width: 100%;
     background-size: cover;
 }
 
-#picture__input{
+#picture__input {
     background: black;
 }
 
 @media only screen and (max-width: 1024px) {
-    html{
+    html {
         font-size: 7px;
     }
+
+    #containerMain1 form {
+        width: 30vw;
+        height: 48vh;
+    }
+
     #containerMain2 form {
         height: 48vh;
     }
-    #btnEnviar{
+
+    #btnEnviar {
         padding: 7px;
         margin-bottom: 15px;
     }
-  }
 
-  @media only screen and (max-width: 768px) {
-    html{
+    #txtCidade,
+    #txtBairro,
+    #txtDetalhes,
+    #btnEnviar {
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    html {
         font-size: 6px;
     }
+
+    #containerMain1 form {
+        width: 40vw;
+        height: 48vh;
+    }
+
     #containerMain2 form {
         width: 35vw;
         height: 45vh;
     }
-    #btnEnviar{
+
+    #btnEnviar {
         padding: 7px;
         margin-bottom: 15px;
     }
-  }
-  @media only screen and (max-width: 425px) {
-    html{
+}
+
+@media only screen and (max-width: 425px) {
+    html {
         font-size: 6px;
     }
+
+    #containerMain1 form {
+        width: 70vw;
+        height: 48vh;
+    }
+
     #containerMain2 form {
         width: 70vw;
         height: 45vh;
     }
-    #btnEnviar{
+
+    #btnEnviar {
         padding: 7px;
         margin-bottom: 15px;
     }
-  }
+}
